@@ -26,17 +26,17 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "26994377")
+    API_HASH  = os.environ.get("API_HASH", "9c9eb74a4a0a1ecd4c96abebf3c637ee")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8350307227:AAGcJW5OFUp6ah_9akaD-KAO2m3yrrXZ_C8") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","pyrokibotz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","pyroibotz")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://fixmayart834:FMWwXBd4JJYMs2Iv@cluster0.ltpube9.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
+    START_PIC   = os.environ.get("START_PIC", "https://envs.sh/tjX.jpg/HGBOTZ.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "-1003024428633") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL","-1002936339662"))
